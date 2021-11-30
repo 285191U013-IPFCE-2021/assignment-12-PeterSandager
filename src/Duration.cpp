@@ -41,7 +41,7 @@ bool Duration::tick(int dt)
 
 void Duration::setAlarm(int t)
 {
-    // No assert for test purposes. Although the provided CMake file has errors, so I can't build as of right now.
+    // No assert for test purposes. Although the provided CMake file gives me errors, so I can't build as of right now.
     // Only set alarm to a time value in the future
     if (t > time)
     {
