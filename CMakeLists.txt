@@ -4,6 +4,9 @@ include(CTest)
 
 set(CMAKE_CXX_STANDARD 14)
 
+# Provided CMake file has errors
+
+
 # static checks
 # if(MSVC)
 #   add_compile_options(/W4 /WX)
@@ -24,7 +27,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 # define library called queue that can imported into other targets via
 # 'target_link_libraries'
-add_library(mymath src/duration.cpp)
+add_library(mymath src/Duration.cpp)
 target_include_directories(mymath PUBLIC include)
 
 # define executable named main for experimenting and debugging code
