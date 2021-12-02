@@ -1,4 +1,4 @@
-#include "Duration.hpp"
+#include "Duration.h"
 #include <assert.h>
 
 // Public constructor method setting time = 0, alarm = -1 and 'alarmHasBeenSet' = false.
@@ -17,6 +17,10 @@ Duration::Duration(int t)
     alarm = -1;
     alarmHasBeenSet = false;
 }
+Duration::~Duration()
+{
+
+};
 
 int Duration::getDuration()
 {
@@ -33,7 +37,7 @@ bool Duration::tick()
 // Second tick incrementing time by the value dt
 bool Duration::tick(int dt)
 {
-    assert(dt > 0);
+    assert(dt >= 0);
     time = time + dt;
 
     return checkAndUpdateAlarm();
