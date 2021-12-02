@@ -1,5 +1,5 @@
-#ifndef DURATION_HPP
-#define DURATION_HPP
+#ifndef DURATION_H
+#define DURATION_H
 
 class Duration
 {
